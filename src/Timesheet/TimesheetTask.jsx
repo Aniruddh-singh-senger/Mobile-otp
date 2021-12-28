@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import TaskModal from '../Clock/TaskModal';
 
 
 const TimesheetTask = () => {
@@ -11,7 +13,7 @@ const TimesheetTask = () => {
   <div className="container">
     <div className="row align-items-center position-relative position-relative zi-2">
       <div className="col-auto position-absolute start-0">
-        <a href="javascript:;"><img className="w-32px" src="assets/img/back-btn.svg" alt=""/></a>
+        <a href="/"><img className="w-32px" src="assets/img/back-btn.svg" alt=""/></a>
       </div>
       <div className="col text-center">
         <h2 className="text-white fw-600 fs-18 mb-0">Thu, Aug 19</h2>
@@ -110,23 +112,23 @@ const TimesheetTask = () => {
                 </div>
                 <form className="py-4">
                   <div className="form-group position-relative text-start mb-3">
-                    <label className="fw-600 fs-16 mb-1" for="">Trade Category</label>
+                    <label className="fw-600 fs-16 mb-1" htmlFor="">Trade Category</label>
                     <input type="text" id="address" name="address"
                       className="form-control shadow-none px-3 fs-14 h-33px"/>
                   </div>
                   <div className="form-group position-relative text-start mb-3">
-                    <label className="fw-600 fs-16 mb-1" for="">Task Description</label>
+                    <label className="fw-600 fs-16 mb-1" htmlFor="">Task Description</label>
                     <textarea className="form-control shadow-none fs-14" name="message" id="message"></textarea>
                   </div>
                   <div className="form-group position-relative text-start mb-3">
-                    <label className="fw-600 fs-16 mb-1" for="">Time</label>
+                    <label className="fw-600 fs-16 mb-1" htmlFor="">Time</label>
                     <input type="text" id="address" name="address"
                       className="form-control shadow-none px-3 fs-14 h-33px"/>
                   </div>
                   <div className="form-group position-relative mt-5 row justify-content-end pt-4">
                     <div className="col-6">
-                      <a href="/TimeSheet" className="button_screens rounded-8 fs-16"> + Add
-                      </a>
+                      <Link to="/TimeSheet" className="button_screens rounded-8 fs-16"> + Add
+                      </Link>
                     </div>
                   </div>
                 </form>
@@ -140,10 +142,10 @@ const TimesheetTask = () => {
           <div className="form-group position-relative text-center my-5 py-4">
             <div className="row mx-0">
               <div className="col-6">
-                <a href="javascreipt:;" className="button_screens rounded-8 fs-16">Cancel</a>
+                <a href="/" className="button_screens rounded-8 fs-16">Cancel</a>
               </div>
               <div className="col-6">
-                <a href="javascreipt:;" className="button_screens rounded-pill fs-16">Share</a>
+                <a href="/" className="button_screens rounded-pill fs-16">Share</a>
               </div>
             </div>
           </div>
@@ -152,7 +154,8 @@ const TimesheetTask = () => {
     </div>
   </div>
 </div>
-</main>   
+</main>  
+<TaskModal /> 
         </>
     )
 }

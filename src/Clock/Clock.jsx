@@ -1,6 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Footer from '../Footer';
-import ClockFolder from './ClockFolder';
+import ClockModal from './ClockModal';
+
 
 
 
@@ -14,7 +16,7 @@ const Clock = () => {
   <div className="container">
     <div className="row align-items-center position-relative position-relative zi-2">
       <div className="col-auto position-absolute start-0">
-        <a href="javascript:;"><img className="w-32px" src="assets/img/back-btn.svg" alt=""/></a>
+        <a href="/"><img className="w-32px" src="assets/img/back-btn.svg" alt=""/></a>
       </div>
       <div className="col text-center">
         <h2 className="text-white fw-600 fs-18 mb-0">Clock</h2>
@@ -24,9 +26,9 @@ const Clock = () => {
 </div>
 <div className="screens_scroll_part py-5">
   <div className="map_box">
-    <iframe width="100%"
+    <iframe width="100%" title="frame"
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6509167.682012511!2d-123.79975055493215!3d37.1929955926075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb9fe5f285e3d%3A0x8b5109a227086f55!2sCalifornia%2C%20USA!5e0!3m2!1sen!2sin!4v1637221594680!5m2!1sen!2sin"
-      allowfullscreen="" loading="lazy"></iframe>
+      allowFullScreen="" loading="lazy"></iframe>
   </div>
   <div className="container pt-3">
     <div className="row">
@@ -59,18 +61,18 @@ const Clock = () => {
         </form>
       </div>
       <div className="col-12 my-5">
-        <a className="start_timer" data-bs-toggle="modal" data-bs-target="#exampleModal12" href="javascript:;">
+        <Link className="start_timer" data-bs-toggle="modal" data-bs-target="#exampleModal12" to="/ClockIn">
           <div><img src="assets/img/timer.svg" alt=""/>
             <strong className="d-flex align-items-center text-theme1 mt-2 fs-14">Start Timer</strong>
           </div>
-        </a>
+        </Link>
       </div>
     </div>
   </div>
 </div>
 <Footer /> 
 </main>
-<ClockFolder />
+<ClockModal />
 
         </>
     )

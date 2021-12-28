@@ -1,9 +1,9 @@
 import React from 'react'
 
-const ClockTaskModal = () => {
+const TaskModal = () => {
     return (
         <>
-           <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+           <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div className="modal-dialog modal-dialog-centered">
     <div className="modal-content rounded-20">
       <div className="modal-header text-center position-relative py-4">
@@ -13,11 +13,11 @@ const ClockTaskModal = () => {
       <div className="modal-body">
         <form className="py-1">
           <div className="form-group position-relative text-start mb-3">
-            <label className="fw-600 fs-14 mb-1" for="">Trade Category</label>
+            <label className="fw-600 fs-14 mb-1" htmlFor="">Trade Category</label>
             <input type="text" id="address" name="address" className="form-control shadow-none px-3 fs-14 h-33px"/>
           </div>
           <div className="form-group position-relative text-start mb-3">
-            <label className="fw-600 fs-14 mb-1" for="">Task Description</label>
+            <label className="fw-600 fs-14 mb-1" htmlFor="">Task Description</label>
             <textarea className="form-control shadow-none fs-14 h-90px" name="message" id="message"></textarea>
           </div> 
         </form>
@@ -63,7 +63,7 @@ const ClockTaskModal = () => {
     </div>
   </div>
 </div> 
-<div className="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div className="modal fade" id="exampleModal1" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div className="modal-dialog modal-dialog-centered">
     <div className="modal-content rounded-20">
       <div className="modal-header text-center position-relative py-4">
@@ -114,7 +114,7 @@ const ClockTaskModal = () => {
             </div>
             <form className="row" action="">
               <div className="form-group position-relative text-start mb-4">
-                <label className="fw-600 fs-16 d-flex mb-2" for="message">Add Note</label>
+                <label className="fw-600 fs-16 d-flex mb-2" htmlFor="message">Add Note</label>
                 <textarea className="form-control shadow-none h-90px" name="message" id="message"></textarea>
               </div> 
             </form>
@@ -134,7 +134,7 @@ const ClockTaskModal = () => {
     </div>
   </div>
 </div> 
-<div className="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div className="modal fade" id="exampleModal2" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div className="modal-dialog modal-dialog-centered">
     <div className="modal-content rounded-20">
       <div className="modal-header text-center position-relative py-4">
@@ -179,7 +179,7 @@ const ClockTaskModal = () => {
             </div>
             <form className="row" action="">
               <div className="form-group position-relative text-start mb-4">
-                <label className="fw-600 fs-16 d-flex mb-2" for="message">Add Note</label>
+                <label className="fw-600 fs-16 d-flex mb-2" htmlFor="message">Add Note</label>
                 <textarea className="form-control shadow-none h-90px" name="message" id="message"></textarea>
               </div> 
             </form>
@@ -203,4 +203,4 @@ const ClockTaskModal = () => {
     )
 }
 
-export default ClockTaskModal
+export default TaskModal;

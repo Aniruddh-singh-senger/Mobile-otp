@@ -2,10 +2,10 @@ import React from 'react';
 import './App.css';
 import Navbar from './Navbar';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Otp from './Otp';
-import Verify from './Verify';
-import SignUp from './SignUp';
-import SignIn from './SignIn';
+import Otp from './User/Otp';
+import Verify from './User/Verify';
+import SignUp from './User/SignUp';
+import SignIn from './User/SignIn';
 import Home from './Home';
 import TimeSheet from './Timesheet/TimeSheet';
 import Clock from './Clock/Clock';
@@ -13,7 +13,7 @@ import ClockIn from './Clock/ClockIn';
 import ClockOut from './Clock/ClockOut';
 import ClockTask from './Clock/ClockTask';
 import TimesheetTask from './Timesheet/TimesheetTask';
-import Profile from './Profile';
+import Profile from './User/Profile';
 
 
 function App() {

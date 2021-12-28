@@ -3,7 +3,7 @@ import React from 'react'
 const ClockOutFolder = () => {
     return (
         <>
-          <div className="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div className="modal fade" id="exampleModal1" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div className="modal-dialog modal-dialog-centered">
     <div className="modal-content rounded-20">
       <div className="modal-header text-center position-relative py-4">
@@ -54,7 +54,7 @@ const ClockOutFolder = () => {
             </div>
             <form className="row" action="">
               <div className="form-group position-relative text-start mb-4">
-                <label className="fw-600 fs-16 d-flex mb-2" for="message">Add Note</label>
+                <label className="fw-600 fs-16 d-flex mb-2" htmlFor="message">Add Note</label>
                 <textarea className="form-control shadow-none h-90px" name="message" id="message"></textarea>
               </div> 
             </form>
@@ -74,7 +74,7 @@ const ClockOutFolder = () => {
     </div>
   </div>
 </div> 
-<div className="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div className="modal fade" id="exampleModal2" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div className="modal-dialog modal-dialog-centered">
     <div className="modal-content rounded-20">
       <div className="modal-header text-center position-relative py-4">
@@ -119,7 +119,7 @@ const ClockOutFolder = () => {
             </div>
             <form className="row" action="">
               <div className="form-group position-relative text-start mb-4">
-                <label className="fw-600 fs-16 d-flex mb-2" for="message">Add Note</label>
+                <label className="fw-600 fs-16 d-flex mb-2" htmlFor="message">Add Note</label>
                 <textarea className="form-control shadow-none h-90px" name="message" id="message"></textarea>
               </div> 
             </form>

@@ -1,5 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Footer from '../Footer';
+
 
 
 const ClockIn = () => {
@@ -12,7 +14,7 @@ const ClockIn = () => {
   <div className="container">
     <div className="row align-items-center position-relative position-relative zi-2">
       <div className="col-auto position-absolute start-0">
-        <a href="javascript:;"><img className="w-32px" src="assets/img/back-btn.svg" alt=""/></a>
+        <a href="/"><img className="w-32px" src="assets/img/back-btn.svg" alt=""/></a>
       </div>
       <div className="col text-center">
         <h2 className="text-white fw-600 fs-18 mb-0">Clock In</h2>
@@ -42,11 +44,11 @@ const ClockIn = () => {
       <div className="col-12">
         <form className="" action="">
           <div className="form-group position-relative text-start mb-4">
-            <label className="fw-600 fs-16 d-flex mb-2" for="message">Add Note</label>
+            <label className="fw-600 fs-16 d-flex mb-2" htmlFor="message">Add Note</label>
             <textarea className="form-control shadow-none" name="message" id="message"></textarea>
           </div>
           <div className="form-group position-relative text-center my-5 py-5">
-            <a href="/ClockOut" className="button_screens rounded-10 fs-15 d-inline-flex w-auto px-4">Clock Out</a>
+            <Link to="/ClockOut" className="button_screens rounded-10 fs-15 d-inline-flex w-auto px-4">Clock Out</Link>
           </div>
         </form>
       </div>

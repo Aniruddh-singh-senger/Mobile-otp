@@ -17,16 +17,16 @@ import { Link } from 'react-router-dom'
                   <Link className="nav-link" to="/Profile">Profile</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/Verify">Verify</Link>
+                  <Link className="nav-link" to="/Verify">Mobile Verify</Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/Otp">otp</Link>
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link" to="/SignUp">SignUp</Link>
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link" to="/SignIn">SignIn</Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to="/Otp">Otp</Link>
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link" to="/TimeSheet">TimeSheet</Link>

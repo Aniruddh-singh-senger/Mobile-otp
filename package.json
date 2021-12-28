@@ -6,12 +6,19 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "formik": "^2.2.9",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-facebook-login": "^4.1.1",
+    "react-google-login": "^5.2.2",
     "react-hook-form": "^7.15.3",
+    "react-inputs-validation": "2.1.5",
     "react-router-dom": "^6.1.1",
     "react-scripts": "4.0.3",
-    "web-vitals": "^1.1.2"
+    "react-toastify": "^8.1.0",
+    "validator": "10.8.0",
+    "web-vitals": "^1.1.2",
+    "yup": "^0.32.11"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -11,7 +11,7 @@ const TimeSheet = () => {
             <div className="container">
               <div className="row align-items-center position-relative position-relative zi-2">
                 <div className="col-auto position-absolute start-0">
-                  <a href="javascript:;"><img className="w-32px" src="assets/img/back-btn.svg" alt=""/></a>
+                  <a href="/"><img className="w-32px" src="assets/img/back-btn.svg" alt=""/></a>
                 </div>
                 <div className="col text-center">
                   <h2 className="text-white fw-600 fs-18 mb-0">Timesheet</h2>
@@ -28,18 +28,18 @@ const TimeSheet = () => {
                       <form className="row align-items-center">
                         <div className="col">
                           <div className="form-group">
-                            <input type="text" autocomplete="off" className="form-control shadow-none border-2 border h-60px px-3"
+                            <input type="text" autoComplete="off" className="form-control shadow-none border-2 border h-60px px-3"
                               id="filter-date" placeholder="2021/06/19 15:13"/>
                           </div>
                         </div>
                         <div className="col-auto px-0 text-center">
                           <div className="form-group">
-                            <label className="fw-600 fs-18" for="">To</label>
+                            <label className="fw-600 fs-18" htmlFor="">To</label>
                           </div>
                         </div>
                         <div className="col">
                           <div className="form-group">
-                            <input type="text" autocomplete="off" className="form-control shadow-none border-2 border h-60px px-3"
+                            <input type="text" autoComplete="off" className="form-control shadow-none border-2 border h-60px px-3"
                               id="filter-date" placeholder="2021/06/19 15:13"/>
                           </div>
                         </div>
@@ -47,7 +47,7 @@ const TimeSheet = () => {
                     </div>
                     <div className="col-12 mb-4 mt-2">
                       <div className="bg-light rounded-4 border border-1 text-center">
-                        <a href="javascript:;" className="row mx-0">
+                        <a href="/" className="row mx-0">
                           <div className="col-12 py-3 border-bottom">
                             <div className="row align-items-center">
                               <div className="col px-1">
@@ -65,7 +65,7 @@ const TimeSheet = () => {
                             </div>
                           </div>
                         </a>
-                        <a href="javascript:;" className="row mx-0">
+                        <a href="/" className="row mx-0">
                           <div className="col-12 py-3 border-bottom">
                             <div className="row align-items-center">
                               <div className="col px-1">
@@ -83,7 +83,7 @@ const TimeSheet = () => {
                             </div>
                           </div>
                         </a>
-                        <a href="javascript:;" className="row mx-0">
+                        <a href="/" className="row mx-0">
                           <div className="col-12 py-3 border-bottom">
                             <div className="row align-items-center">
                               <div className="col px-1">
@@ -101,7 +101,7 @@ const TimeSheet = () => {
                             </div>
                           </div>
                         </a>
-                        <a href="javascript:;" className="row mx-0">
+                        <a href="/" className="row mx-0">
                           <div className="col-12 py-3 border-bottom">
                             <div className="row align-items-center">
                               <div className="col px-1">

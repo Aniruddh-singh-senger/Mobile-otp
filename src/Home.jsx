@@ -1,4 +1,6 @@
 import React from 'react';
+import Footer from './Footer';
+
 
 const Home = () => {
     return (
@@ -21,15 +23,15 @@ const Home = () => {
                             <div className="col-12 text-center">
                                 <form className="" action="">
                                     <div className="form-group position-relative text-start mb-4">
-                                        <label className="fw-600 fs-16 d-flex mb-2" for="message">Whats new</label>
+                                        <label className="fw-600 fs-16 d-flex mb-2" htmlFor="message">Whats new</label>
                                         <textarea className="form-control shadow-none" name="message" id="message"></textarea>
                                     </div>
                                     <div className="form-group position-relative text-start mb-4">
-                                        <label className="fw-600 fs-16 d-flex mb-2" for="message">Updates</label>
+                                        <label className="fw-600 fs-16 d-flex mb-2" htmlFor="message">Updates</label>
                                         <textarea className="form-control shadow-none" name="message" id="message"></textarea>
                                     </div>
                                     <div className="form-group position-relative text-start mb-4">
-                                        <label className="fw-600 fs-16 d-flex mb-2" for="message">Information</label>
+                                        <label className="fw-600 fs-16 d-flex mb-2" htmlFor="message">Information</label>
                                         <textarea className="form-control shadow-none" name="message" id="message"></textarea>
                                     </div>
                                 </form>
@@ -37,31 +39,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div className="screens_footer">
-                    <div className="container">
-                        <div className="row mx-0 align-items-center">
-                            <div className="col text-center">
-                                <a className="footer_mennus position-relative active_menu" href="/Home"><img
-                                    src="assets/img/active_home.svg" alt="" /></a>
-                            </div>
-                            <div className="col text-center">
-                                <a className="footer_mennus position-relative" href="/Profile"><img src="assets/img/user.svg" alt="" /></a>
-                            </div>
-                            <div className="col text-center middle_menus">
-                                <a className="footer_mennus position-relative" href="/Clock"><img className="bg-white rounded-pill"
-                                    src="assets/img/watch.svg" alt="" /></a>
-                            </div>
-                            <div className="col text-center">
-                                <a className="footer_mennus position-relative" href="/TimeSheet"><img src="assets/img/timesheet.svg"
-                                    alt="" /></a>
-                            </div>
-                            <div className="col text-center">
-                                <a className="footer_mennus position-relative" href="javascript:;"><img src="assets/img/settings.svg"
-                                    alt="" /></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <Footer />
             </main>
         </>
     )
